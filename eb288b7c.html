@@ -45,11 +45,16 @@
 	      <input type="text" placeholder="message" id="message">
 	    </label>
 	    <button class="button button-small button-royal" id="send2uart">
-	      Send2Uart
+	      Uart
+	    </button>
+	    <button class="button button-small button-energized" id="read">
+	      Read
+	    </button>
+	    <button class="button button-small button-energized" id="write">
+	      Write
 	    </button>
 	  </div>
-	<div id="temp"></div>
-	<div id="hum"></div>
+
 	<div class="button-bar">
 	  <a class="button" style="background:red; color:white" id="led_red">Red</a>
 	  <a class="button" style="background:green; color:white" id="led_green">Green</a>
@@ -60,7 +65,6 @@
 	  <a class="button" style="background:black; color:white" id="led_off">Off</a>
 	</div>
 </div>
-
 <script src="http://api.easylink.io/assets/js/mqttws31.js"></script>
 <script>
 function getParameterByName(name) {

@@ -185,7 +185,9 @@ function ez_connect(device_id) {
     document.querySelector('#read').addEventListener('click', read);
 
     function led_on() {
-        client.publish(device_id+'/in/write', '{"4":true}');
+    	var topic = device_id+'/in';
+        var commond = '{"led_on":1}'; 
+        client.publish(topic, commond);
     }
     //document.querySelector('#led_on').addEventListener('touchstart', led_on);
     document.querySelector('#led_on').addEventListener('click', led_on);

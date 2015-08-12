@@ -222,7 +222,7 @@ function ez_connect(device_id) {
         client.publish(topic, commond);
     }
     //document.querySelector('#led_off').addEventListener('touchstart', led_off);
-    document.querySelector('#bright_down').addEventListener('click', bright);
+    document.querySelector('#bright_down').addEventListener('click', bright_down);
     
     function bright_up() {
     	var topic = device_id+'/in';

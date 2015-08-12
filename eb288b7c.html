@@ -206,7 +206,7 @@ function ez_connect(device_id) {
         client.publish(topic, commond);
     }
     //document.querySelector('#led_off').addEventListener('touchstart', led_off);
-    document.querySelector('#led_off').addEventListener('click', temp_down);
+    document.querySelector('#temp_down').addEventListener('click', temp_down);
     
     function temp_up() {
     	var topic = device_id+'/in';
@@ -214,7 +214,7 @@ function ez_connect(device_id) {
         client.publish(topic, commond);
     }
     //document.querySelector('#led_off').addEventListener('touchstart', led_off);
-    document.querySelector('#led_off').addEventListener('click', temp_up);    
+    document.querySelector('#temp_up').addEventListener('click', temp_up);    
 
     function bright_down() {
     	var topic = device_id+'/in';
@@ -222,7 +222,7 @@ function ez_connect(device_id) {
         client.publish(topic, commond);
     }
     //document.querySelector('#led_off').addEventListener('touchstart', led_off);
-    document.querySelector('#led_off').addEventListener('click', bright);
+    document.querySelector('#bright_down').addEventListener('click', bright);
     
     function bright_up() {
     	var topic = device_id+'/in';
@@ -230,7 +230,7 @@ function ez_connect(device_id) {
         client.publish(topic, commond);
     }
     //document.querySelector('#led_off').addEventListener('touchstart', led_off);
-    document.querySelector('#led_off').addEventListener('click', bright_up);    
+    document.querySelector('#bright_up').addEventListener('click', bright_up);    
 
     function led_red() {
         client.publish(device_id+'/in/write', '{"4":true,"5":0, "6":100, "7":100}');
